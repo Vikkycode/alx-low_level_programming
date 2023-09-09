@@ -16,7 +16,7 @@ int main(void)
 		{
 			s3 = s2 + 1;
 			while (s3 <= e3)
-			{ 
+			{
 				putchar(s + '0');
 				putchar(s2 + '0');
 				putchar(s3 + '0');
