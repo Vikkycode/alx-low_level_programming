@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - main function
  * Return:always 0
@@ -7,28 +8,23 @@
 
 int main(void)
 {
-	int num1 = 0, num2 = 1, num1max = 98, num2max = 99;
+	int p, q;
 
-	while (num1 <= num1max)
+	for (p = 0; p <=98; p++)
 	{
-		num2 = num1 + 1;
-		while (num2 <= num2max)
-		{
-			putchar(num1 < 9 ? 0 + '0' : (num1 / 10) + '0');
-			putchar(num1 < 9 ? num1 + '0' : (num1 % 10) + '0');
-			putchar(' ');
-			putchar(num2 < 9 ? 0 + '0' : (num2 / 10) + '0');
-			putchar(num2 < 9 ? num2 + '0' : (num2 % 10) + '0');
-			if (num1 != num1max)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-
-		}	num2++;
-		num1++;
+	for (q = p + 1; q <= 99; q++)
+	{
+	putchar((p / 10) + '0');
+	putchar((p % 10) + '0');
+	putchar(' ');
+	putchar((q / 10) + '0');
+	putchar((q % 10) + '0');
+	if (p == 98 && q == 99)
+	continue;
+	putchar(',');
+	putchar(' ');
+	}
 	}
 	putchar('\n');
-
 	return (0);
 }
