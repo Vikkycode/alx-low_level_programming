@@ -8,8 +8,7 @@
 int main(void)
 {
 	int s = 0, e = 8, s1 = 1, e2 = 9, tmp = 1;
-	
-	while ( s <= e)
+	while (s <= e)
 	{
 		s1 = tmp;
 
@@ -19,7 +18,7 @@ int main(void)
 			putchar(s1 + '0');
 			s1++;
 
-			if(s != e)
+			if (s != e)
 			{
 				putchar(',');
 				putchar(' ');
