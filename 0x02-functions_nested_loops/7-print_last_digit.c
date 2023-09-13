@@ -2,19 +2,18 @@
 
 /**
  * print_last_digit - functions that print last digital
- *@num: function parameter
- * Return: Always 0.
+ *@i: function parameter
+ * Return: Value of the last digit of number.
  */
 
-int print_last_digit(int num)
+int print_last_digit(int i)
 {
 
-	int lastDigit;
+	int k;
 
-	lastDigit = num % 10;
-
-	if (lastDigit < 0)
-		lastDigit = -lastDigit;
-	_putchar(lastDigit + 'O');
-	return (lastDigit);
+	k = i % 10;
+	if (k < 0)
+		k = k * -1;
+	_putchar(k +'0');
+	return (k);
 }
