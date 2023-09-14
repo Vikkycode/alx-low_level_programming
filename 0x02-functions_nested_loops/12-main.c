@@ -1,5 +1,4 @@
 #include  "main.h"
-#include <stdio.h>
 /**
  * main - check the code 
  *
@@ -11,7 +10,7 @@ int main(void)
 	print_times_table(3);
 	_putchar('\n');
 	print_times_table(5);
-	-putchar('\n');
+	_putchar('\n');
 	print_times_table(98);
 	_putchar('\n');
 	print_times_table(12);
