@@ -3,16 +3,16 @@
 /**
  * puts2 - function that prints every other character of a string,
  * starting with the first character, followed by a new line
- *@s: point to s
+ *@str: point to str
  *Return: Always 0
  */
 
-void puts2(char *s)
+void puts2(char *str)
 {
 	int length = 0;
 	int t = 0;
 	int i;
-	char *y = s;
+	char *y = str;
 
 	while (*y != '\0')
 	{
@@ -24,7 +24,7 @@ void puts2(char *s)
 	{
 		if (i % 2 == 0)
 		{
-		_putchar(s[i]);
+		_putchar(str[i]);
 		}
 	}
 	_putchar('\n');
