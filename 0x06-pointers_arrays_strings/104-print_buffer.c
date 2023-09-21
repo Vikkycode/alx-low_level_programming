@@ -14,7 +14,13 @@ void print_buffer(char *b, int size)
 
 	k = 0;
 
+	
 	if (size <= 0)
+	{
+		printf("\n");
+		return;
+	}
+	while (i < size)
 	{
 		j = size - k < 10 ? size - 0 : 10;
 		printf("%08x", k);
