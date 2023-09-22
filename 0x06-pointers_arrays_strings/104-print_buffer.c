@@ -32,7 +32,6 @@ void printHexes(char *b, int start, int end)
 		if (i % 2)
 			printf(" ");
 		i++;
-		i++;
 	}
 }
 
