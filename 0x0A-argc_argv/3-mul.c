@@ -1,23 +1,19 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
+
 /**
- * _atoi - function atoi
- * @s: string to be convert
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
  *
- * Return: Always 0(Success)
+ * Return: the int converted from the string
  */
 int _atoi(char *s)
 {
-	int i;
-	int j;
-	int num;
-	int len;
-	int f;
-	int digit;
+	int i, d, n, len, f, digit;
 
 	i = 0;
-	j = 0;
-	num = 0;
+	d = 0;
+	n = 0;
 	len = 0;
 	f = 0;
 	digit = 0;
@@ -28,29 +24,30 @@ int _atoi(char *s)
 	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
-			++j;
+			++d;
+
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
-			if (j % 2)
+			if (d % 2)
 				digit = -digit;
-			num = num * 10 + digit;
+			n = n * 10 + digit;
 			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 			f = 0;
 		}
-		j++;
+		i++;
 	}
 
 	if (f == 0)
 		return (0);
 
-	return (num);
+	return (n);
 }
 
 /**
- * main - multiples two numbers
+ * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array of arguments
  *
