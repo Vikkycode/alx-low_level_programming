@@ -1,16 +1,16 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - free a linked 
- * @h: pointer to the first node 
+ * free_listint_safe - free a linked
+ * @h: pointer to the first node
  *
  * Return: elements number
  */
 size_t free_listint_safe(listint_t **h)
 {
- size_t length = 0;
- int different;
- listint_t *temp;
+	size_t length = 0;
+	int different;
+	listint_t *temp;
 
 	if (!h || !*h)
 	return (0);
@@ -38,4 +38,3 @@ size_t free_listint_safe(listint_t **h)
 
 	return (length);
 }
-
