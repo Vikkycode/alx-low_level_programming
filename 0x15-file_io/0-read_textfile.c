@@ -5,14 +5,12 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-
 /**
  * read_textfile - function that read text from a file that print to POSIX
  *@filename: file pointer variable
  *@letters: letters variable
  * Return: lenw
 **/
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char buffer[letters];
@@ -22,7 +20,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-
 	ssize_t lenr = fread(buffer, 1, letters, file);
 
 	fclose(file);
